@@ -18,16 +18,16 @@
 ## itemsテーブル
 
 |Column                |Type     |Options     |
-|----------------------|---------|------------|
-|product_name          |string   |null: false |
-|product_description   |text     |null: false |
-|category_id           |integer  |null: false |
-|product_condition_id  |integer  |null: false |
-|shipping_fee_id       |integer  |null: false |
-|region_id             |integer  |null: false |
-|days_id               |integer  |null: false |
-|price                 |integer  |null: false |
-|user                  |reference|null: false, foreign_key: true|
+|----------------------|----------|------------|
+|product_name          |string    |null: false |
+|product_description   |text      |null: false |
+|category_id           |integer   |null: false |
+|product_condition_id  |integer   |null: false |
+|shipping_fee_id       |integer   |null: false |
+|region_id             |integer   |null: false |
+|day_id                |integer   |null: false |
+|price                 |integer   |null: false |
+|user                  |references|null: false, foreign_key: true|
 
 
 ### Association
