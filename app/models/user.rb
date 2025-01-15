@@ -16,4 +16,5 @@ class User < ApplicationRecord
   with_options presence: true, format: { with: /\A[ァ-ヶー]+\z/, message: '全角(カタカナ)を使用してください' } do
     validates :kana_first, :kana_last
   end
+  validates :password, format: { with: /\A[a-zA-z0-9]+\z/, message: 'は半角英数字のみで入力してください' }
 end
