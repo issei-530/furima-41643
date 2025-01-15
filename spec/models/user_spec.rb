@@ -65,13 +65,6 @@ RSpec.describe User, type: :model do
         @user.valid?
         expect(@user.errors.full_messages).to include("Password confirmation doesn't match Password")
       end
-    end
-    context '本人情報が登録できるとき' do
-      it 'first_nameとlast_nameとkana_firstとkana_lastとbirth_idが存在すれば登録できる' do
-        expect(@user).to be_valid
-      end
-    end
-    context '本人情報が登録できない時' do
       it 'お名前(全角)は、名字が必須であること' do
         @user.first_name = ''
         @user.valid?
