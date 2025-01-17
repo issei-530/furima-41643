@@ -5,10 +5,10 @@
 |nickname              |string |null: false               |
 |email                 |string |null: false, unique: true |
 |encrypted_password    |string |null: false               |
-|name                  |string |null: false               |
-|name                  |string |null: false               |
-|kana_name             |string |null: false               |
-|kana_name             |string |null: false               |
+|first_name            |string |null: false               |
+|last_name             |string |null: false               |
+|kana_first            |string |null: false               |
+|kana_last             |string |null: false               |
 |birth                 |date   |null: false               |
 
 ### Association
