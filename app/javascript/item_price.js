@@ -2,7 +2,6 @@ const pricecalculation =() =>{
   const priceInput = document.getElementById("item-price");
   priceInput.addEventListener("input", () => {
     const inputValue = priceInput.value;
-    console.log(inputValue);
     const addTaxDom = document.getElementById("add-tax-price")
     const price = inputValue;
     const taxRate = 0.1;
