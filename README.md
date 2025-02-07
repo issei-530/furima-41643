@@ -52,11 +52,11 @@
 |----------------------|----------|------------|
 |post_code             |string    |null: false |
 |region_id             |integer   |null: false |
-|cuty                  |string    |null: false |
+|city                  |string    |null: false |
 |street_address        |string    |null: false |
 |building_name         |string    |            |
 |telephone             |string    |null: false |
-|buy                   |references|null: false, foreign_key: true|
+|buys                  |references|null: false, foreign_key: true|
 
 ### Association
 -belongs_to :buy
