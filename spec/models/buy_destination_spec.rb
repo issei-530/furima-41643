@@ -29,8 +29,8 @@ RSpec.describe BuyDestination, type: :model do
         @buydestination.valid?
         expect(@buydestination.errors.full_messages). to include("Post code ise invalid. Include hyphen(-)")
       end
-      it '都道府県が空では購入できない' do
-        @buydestination.region_id = ''
+      it '都道府県が未選択では購入できない' do
+        @buydestination.region_id = '1'
         @buydestination.valid?
         expect(@buydestination.errors.full_messages). to include("Region can't be blank")
       end

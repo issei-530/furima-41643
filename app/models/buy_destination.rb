@@ -6,7 +6,7 @@ class BuyDestination
     validates :user_id
     validates :item_id
     validates :post_code, format: {with: /\A[0-9]{3}-[0-9]{4}\z/, message: "ise invalid. Include hyphen(-)"}
-    validates :region_id
+    validates :region_id, numericality: { other_than: 1, message: "can't be blank" }
     validates :city
     validates :street_address
     validates :telephone, format: {with: /\A\d{10,11}\z/, message: "は10桁以上11桁以内の半角数字で入力してください"} 
