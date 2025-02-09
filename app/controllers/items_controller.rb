@@ -55,7 +55,9 @@ class ItemsController < ApplicationController
   end
 
   def item_sold_out
-    redirect_to root_path @item.buy
+    if @item.buy
+      redirect_to root_path
+    end
   end
 end
 
